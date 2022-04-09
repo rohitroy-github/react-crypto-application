@@ -26,9 +26,19 @@ const App = () => {
               
             </div>
           </Layout>
-        </div>
         <div className='footer'>
-          </div> 
+          <Typography.Title>
+            Cryptoverse <br />
+            All rights reserved - Rohit Roy - 2022 
+          </Typography.Title>
+          <Space>
+            <Link to="/">Home</Link>
+            <Link to="/exchnages">Exchanges</Link>
+            <Link to="/coindetails">Coin Details</Link>
+            <Link to="/news">News</Link>
+          </Space>
+        </div> 
+        </div>
       </div>
     </div>
   );
