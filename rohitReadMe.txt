@@ -1,3 +1,9 @@
+./src 
+App.css checked 
+index.js checked
+App.js checked
+
+
 ./components
 CoinDetails.jsx checked 
 Exchanges.jsx checked 
@@ -11,3 +17,14 @@ Homepage.jsx checked
 ./services checked
 cryptoNewsApi.js checked
 cryptoApi.js checked 
+
+
+./app 
+store.js checked
+
+
+./public
+index.html checked 
+
+./images
+checked
