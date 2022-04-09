@@ -1,8 +1,8 @@
 import React from 'react'
-import { Route, Link, Routes } from 'react-router-dom'; 
+import { Route, Router, Link, Routes } from 'react-router-dom'; 
 import { Layout, Typography, Space, } from 'antd';
 
-import { Navbar, Homepage, Exchanges, News, Cryptocurrencies, CoinDetails }  from './components';
+import { Navbar, Homepage, Exchanges, News, Cryptocurrencies, CryptoDetails }  from './components';
 
 const App = () => {
   return (
@@ -14,23 +14,16 @@ const App = () => {
         <div className='main'>
           <Layout>
             <div className='routes'>
+              {/* <Route> should be packed inside <Routes> tags */}
+              
               <Routes>
-                <Route exact path='/'>
-                  <Homepage /> 
-                </Route>
-                <Route exact path='/exchanges'>
-                  <Exchanges /> 
-                </Route>
-                <Route exact path='/cryptocurrencies'>
-                  <Cryptocurrencies /> 
-                </Route>
-                <Route exact path='/crypto/:coinId'>
-                  <CoinDetails /> 
-                </Route>
-                <Route exact path='/news'>
-                  <News /> 
-                </Route>
+                <Route exact path='/' element={<Homepage />} />
+                <Route exact path='/exchanges' element={<Exchanges />} />
+                <Route exact path='/cryptocurrencies' element={<Cryptocurrencies />} />
+                <Route exact path='/crypto/:coinId' element={<CryptoDetails />} />
+                <Route exact path='/news' element={<News />} />
               </Routes>
+              
             </div>
           </Layout>
         </div>
