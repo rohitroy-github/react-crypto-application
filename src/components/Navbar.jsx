@@ -39,8 +39,9 @@ const Navbar = () => {
           <MenuOutlined />
         </Button> */}
       </div>
-
-      {/* {activeMenu && ( */}
+      
+      {/* Menu | Navbar Menu | Menu Items */}
+     {/* {activeMenu && (  */}
       <Menu theme="dark">
         <Menu.Item icon={<HomeOutlined />}>
           <Link to="/">Home</Link>
@@ -56,10 +57,9 @@ const Navbar = () => {
         </Menu.Item>
       </Menu>
       // )}
-
+      
     </div>
-    
   );
-};
+}
 
 export default Navbar;

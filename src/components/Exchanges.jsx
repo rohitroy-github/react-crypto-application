@@ -6,18 +6,19 @@ import HTMLReactParser from 'html-react-parser';
 import { useGetExchangesQuery } from '../services/cryptoApi';
 import Loader from './Loader';
 
-const { Text } = Typography;
-const { Panel } = Collapse;
+// const { Text } = Typography;
+// const { Panel } = Collapse;
 
 const Exchanges = () => {
-  const { data, isFetching } = useGetExchangesQuery();
-  const exchangesList = data?.data?.exchanges;
- // Note: To access this endpoint you need premium plan
-  if (isFetching) return <Loader />;
+//   const { data, isFetching } = useGetExchangesQuery();
+//   const exchangesList = data?.data?.exchanges;
+//  // Note: To access this endpoint you need premium plan
+//   if (isFetching) return <Loader />;
 
   return (
-    <>
-      <Row>
+    <div>
+
+      {/* <Row>
         <Col span={6}>Exchanges</Col>
         <Col span={6}>24h Trade Volume</Col>
         <Col span={6}>Markets</Col>
@@ -48,9 +49,10 @@ const Exchanges = () => {
             </Collapse>
           </Col>
         ))}
-      </Row>
-    </>
+      </Row> */}
+      
+    </div>
   );
-};
+}
 
 export default Exchanges;

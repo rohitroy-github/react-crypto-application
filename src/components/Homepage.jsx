@@ -8,17 +8,18 @@ import Cryptocurrencies from './Cryptocurrencies';
 import News from './News';
 import Loader from './Loader';
 
-const { Title } = Typography;
+// const { Title } = Typography;
 
 const Homepage = () => {
-  const { data, isFetching } = useGetCryptosQuery(10);
-  const globalStats = data?.data?.stats;
+//   const { data, isFetching } = useGetCryptosQuery(10);
+//   const globalStats = data?.data?.stats;
 
-  if (isFetching) return <Loader />;
+//   if (isFetching) return <Loader />;
 
   return (
-    <>
-      <Title level={2} className="heading">Global Crypto Stats</Title>
+    <div>
+
+      {/* <Title level={2} className="heading">Global Crypto Stats</Title>
       <Row gutter={[32, 32]}>
         <Col span={12}><Statistic title="Total Cryptocurrencies" value={globalStats.total} /></Col>
         <Col span={12}><Statistic title="Total Exchanges" value={millify(globalStats.totalExchanges)} /></Col>
@@ -36,9 +37,10 @@ const Homepage = () => {
         <Title level={2} className="home-title">Latest Crypto News</Title>
         <Title level={3}><Link to="/news">Show more</Link></Title>
       </div>
-      <News simplified />
-    </>
+      <News simplified /> */}
+      
+    </div>
   );
-};
+}
 
 export default Homepage;
