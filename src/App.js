@@ -8,7 +8,7 @@ import { Exchanges, Homepage, News, Cryptocurrencies, CryptoDetails, Navbar } fr
 import './App.css';
 
 const App = () => (
-
+  
   <div className="app">
     <div className="navbar">
       <Navbar />
@@ -43,14 +43,11 @@ const App = () => (
       </div>
     </div> 
     {/* Closing 'main' */}
+
   </div>
-    
 );
 
 export default App;
-
-
-
 
 
 //Test <Routes> codes > 

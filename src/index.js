@@ -11,9 +11,10 @@ import 'antd/dist/antd.css'; //Imports all the main CSS files
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      {/* <Provider store={store}> */}
+      {/* So now all the variables of <App> component will be able to use the store data, variables */}
+      <Provider store={store}> 
         <App />
-      {/* </Provider> */}
+      </Provider>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
